@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — ВДТС</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container-vdts site-header__inner">
+      <a href="index.html" class="logo" aria-label="ВДТ — на главную">
+        <svg class="logo__svg logo__svg--dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 52" width="96" height="34" aria-hidden="true">
+          <text x="0" y="38" font-family="Manrope, system-ui, sans-serif" font-size="40" font-weight="800" letter-spacing="-1.6" fill="#0D1B2A">ВДТ</text>
+          <rect x="0" y="46" width="44" height="2.5" fill="#0F4C81" rx="1"/>
+        </svg>
+        <svg class="logo__svg logo__svg--light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 52" width="96" height="34" aria-hidden="true">
+          <text x="0" y="38" font-family="Manrope, system-ui, sans-serif" font-size="40" font-weight="800" letter-spacing="-1.6" fill="#FFFFFF">ВДТ</text>
+          <rect x="0" y="46" width="44" height="2.5" fill="#A8C4DC" rx="1"/>
+        </svg>
+      </a>
+      <nav aria-label="Основная навигация">
+        <ul class="site-nav">
+          <li><a href="uslugi.html">Услуги</a></li>
+          <li><a href="o-kompanii.html">О компании</a></li>
+          <li><a href="kak-rabotaem.html">Как работаем</a></li>
+          <li><a href="opyt.html">Наш опыт</a></li>
+          <li><a href="faq.html" class="is-active">FAQ</a></li>
+          <li><a href="kontakty.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__actions">
+        <span class="lang-switch"><span class="lang-switch__active">RU</span> | <a href="#">EN</a></span>
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Переключить тему">◐</button>
+        <a href="kontakty.html#request" class="btn-vdts btn-vdts--primary">Оставить заявку</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container-vdts">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a>
+          <span aria-hidden="true">/</span>
+          <span>FAQ</span>
+        </nav>
+        <h1 class="page-hero__title">Часто задаваемые вопросы</h1>
+        <p class="page-hero__lead">Ответы на типичные вопросы о перевозке негабаритных и тяжеловесных грузов.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container-vdts">
+        <div class="faq-accordion">
+          <article class="faq-accordion__item is-open">
+            <button class="faq-accordion__trigger" type="button" aria-expanded="true">Какие грузы вы перевозите?</button>
+            <div class="faq-accordion__panel">
+              <p>Негабаритные и тяжеловесные грузы: промышленное и энергетическое оборудование, строительные конструкции, нефтегазовое и химическое оборудование, металлоконструкции и другое.</p>
+            </div>
+          </article>
+          <article class="faq-accordion__item">
+            <button class="faq-accordion__trigger" type="button" aria-expanded="false">Сколько времени занимает согласование?</button>
+            <div class="faq-accordion__panel">
+              <p>Срок зависит от маршрута, габаритов и веса груза. Обычно от 5 до 20 рабочих дней. Точный срок сообщим после анализа параметров перевозки.</p>
+            </div>
+          </article>
+          <article class="faq-accordion__item">
+            <button class="faq-accordion__trigger" type="button" aria-expanded="false">Работаете ли вы по всей России?</button>
+            <div class="faq-accordion__panel">
+              <p>Да, география работы охватывает все регионы РФ. Основной фокус — маршруты Волго-Донского бассейна и центральная часть страны.</p>
+            </div>
+          </article>
+          <article class="faq-accordion__item">
+            <button class="faq-accordion__trigger" type="button" aria-expanded="false">Как оформить заявку?</button>
+            <div class="faq-accordion__panel">
+              <p>Заполните форму на странице <a href="kontakty.html#request">Контакты</a> или позвоните нам. Укажите тип груза, габариты, вес и маршрут. Менеджер свяжется в течение рабочего дня.</p>
+            </div>
+          </article>
+          <article class="faq-accordion__item">
+            <button class="faq-accordion__trigger" type="button" aria-expanded="false">Нужно ли сопровождение ГИБДД?</button>
+            <div class="faq-accordion__panel">
+              <p>Зависит от габаритов груза и требований маршрута. Мы определяем необходимость сопровождения на этапе проектирования и включаем его в смету при необходимости.</p>
+            </div>
+          </article>
+          <article class="faq-accordion__item">
+            <button class="faq-accordion__trigger" type="button" aria-expanded="false">Можно ли прикрепить чертёж к заявке?</button>
+            <div class="faq-accordion__panel">
+              <p>Да, в форме заявки есть поле для прикрепления файла (чертёж, фото груза). Это ускоряет расчёт и подготовку коммерческого предложения.</p>
+            </div>
+          </article>
+          <article class="faq-accordion__item">
+            <button class="faq-accordion__trigger" type="button" aria-expanded="false">Как рассчитывается стоимость перевозки?</button>
+            <div class="faq-accordion__panel">
+              <p>Стоимость зависит от габаритов и веса груза, длины маршрута, необходимости согласований, такелажных работ и сопровождения. После получения заявки готовим индивидуальное коммерческое предложение.</p>
+            </div>
+          </article>
+          <article class="faq-accordion__item">
+            <button class="faq-accordion__trigger" type="button" aria-expanded="false">Предоставляете ли вы страхование груза?</button>
+            <div class="faq-accordion__panel">
+              <p>Вопрос страхования обсуждается индивидуально по каждому проекту. Уточните у менеджера при оформлении заявки.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <div class="container-vdts cta-strip__inner">
+        <div>
+          <h2>Не нашли ответ?</h2>
+          <p>Задайте вопрос — мы ответим в ближайшее время.</p>
+        </div>
+        <a href="kontakty.html#request" class="btn-vdts btn-vdts--primary btn-vdts--lg">Связаться с нами</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container-vdts">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <svg class="logo__svg logo__svg--footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 52" width="88" height="31" aria-hidden="true">
+            <text x="0" y="38" font-family="Manrope, system-ui, sans-serif" font-size="40" font-weight="800" letter-spacing="-1.6" fill="#FFFFFF">ВДТ</text>
+            <rect x="0" y="46" width="44" height="2.5" fill="#A8C4DC" rx="1"/>
+          </svg>
+          <p>Волга-Дон-Транссервис<br>Негабаритные перевозки</p>
+        </div>
+        <div class="footer__col">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="uslugi.html">Услуги</a></li>
+            <li><a href="o-kompanii.html">О компании</a></li>
+            <li><a href="kak-rabotaem.html">Как работаем</a></li>
+            <li><a href="opyt.html">Наш опыт</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="kontakty.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Документы</h4>
+          <ul>
+            <li><a href="politika-pdn.html">Политика ПДн</a></li>
+            <li><a href="politika-cookies.html">Политика cookie</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Реквизиты</h4>
+          <p>ООО «Волга-Дон-Транссервис»<br>ИНН: «ЗАПОЛНИТЬ»<br>ОГРН: «ЗАПОЛНИТЬ»</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Волга-Дон-Транссервис. Все права защищены.</span>
+        <span class="lang-switch"><span class="lang-switch__active">RU</span> | EN</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-labelledby="cookieTitle" hidden>
+    <div class="container-vdts cookie-banner__inner">
+      <p class="cookie-banner__text" id="cookieTitle">Мы используем cookie для работы сайта (язык, тема оформления). Подробнее — в <a href="politika-cookies.html">Политике cookie</a>.</p>
+      <div class="cookie-banner__actions">
+        <button type="button" class="btn-vdts btn-vdts--primary" id="cookieAccept">Принять</button>
+        <a href="politika-cookies.html" class="btn-vdts btn-vdts--ghost">Подробнее</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/site.js"></script>
+</body>
+</html>

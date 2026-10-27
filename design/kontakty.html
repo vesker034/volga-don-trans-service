@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — ВДТС</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container-vdts site-header__inner">
+      <a href="index.html" class="logo" aria-label="ВДТ — на главную">
+        <svg class="logo__svg logo__svg--dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 52" width="96" height="34" aria-hidden="true">
+          <text x="0" y="38" font-family="Manrope, system-ui, sans-serif" font-size="40" font-weight="800" letter-spacing="-1.6" fill="#0D1B2A">ВДТ</text>
+          <rect x="0" y="46" width="44" height="2.5" fill="#0F4C81" rx="1"/>
+        </svg>
+        <svg class="logo__svg logo__svg--light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 52" width="96" height="34" aria-hidden="true">
+          <text x="0" y="38" font-family="Manrope, system-ui, sans-serif" font-size="40" font-weight="800" letter-spacing="-1.6" fill="#FFFFFF">ВДТ</text>
+          <rect x="0" y="46" width="44" height="2.5" fill="#A8C4DC" rx="1"/>
+        </svg>
+      </a>
+      <nav aria-label="Основная навигация">
+        <ul class="site-nav">
+          <li><a href="uslugi.html">Услуги</a></li>
+          <li><a href="o-kompanii.html">О компании</a></li>
+          <li><a href="kak-rabotaem.html">Как работаем</a></li>
+          <li><a href="opyt.html">Наш опыт</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="kontakty.html" class="is-active">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__actions">
+        <span class="lang-switch"><span class="lang-switch__active">RU</span> | <a href="#">EN</a></span>
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Переключить тему">◐</button>
+        <a href="#request" class="btn-vdts btn-vdts--primary">Оставить заявку</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container-vdts">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a>
+          <span aria-hidden="true">/</span>
+          <span>Контакты</span>
+        </nav>
+        <h1 class="page-hero__title">Контакты</h1>
+        <p class="page-hero__lead">Свяжитесь с нами или оставьте заявку на перевозку — менеджер ответит в течение рабочего дня.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container-vdts">
+        <div class="contacts__grid">
+          <div class="contacts__info">
+            <h3>Свяжитесь с нами</h3>
+            <p><strong>Телефон:</strong> +7 (___) ___-__-__</p>
+            <p><strong>Email:</strong> info@vdtrans.ru</p>
+            <p><strong>Адрес:</strong> «ЗАПОЛНИТЬ: фактический адрес»</p>
+            <p><strong>Режим работы:</strong> Пн–Пт, 9:00–18:00 (МСК)</p>
+            <p style="margin-top:1.5rem;font-size:0.8125rem">По вопросам обработки персональных данных: <a href="mailto:privacy@vdtrans.ru">privacy@vdtrans.ru</a></p>
+            <div class="map-placeholder">Яндекс.Карта</div>
+          </div>
+          <form class="request-form" id="request" action="#" method="post">
+            <h3>Заявка на перевозку</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">ФИО <span aria-hidden="true">*</span></label>
+                <input class="form-control" type="text" id="name" name="name" placeholder="Иванов Иван Иванович" required>
+              </div>
+              <div class="form-group">
+                <label for="company">Компания</label>
+                <input class="form-control" type="text" id="company" name="company" placeholder="ООО «Пример»">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Телефон <span aria-hidden="true">*</span></label>
+                <input class="form-control" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email <span aria-hidden="true">*</span></label>
+                <input class="form-control" type="email" id="email" name="email" placeholder="email@company.ru" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cargo">Тип груза</label>
+              <input class="form-control" type="text" id="cargo" name="cargo" placeholder="Трансформатор, реактор...">
+            </div>
+            <div class="form-row form-row--3">
+              <div class="form-group">
+                <label for="dimensions">Габариты</label>
+                <input class="form-control" type="text" id="dimensions" name="dimensions" placeholder="Д × Ш × В, м">
+              </div>
+              <div class="form-group">
+                <label for="weight">Вес</label>
+                <input class="form-control" type="text" id="weight" name="weight" placeholder="тонн">
+              </div>
+              <div class="form-group">
+                <label for="route">Маршрут</label>
+                <input class="form-control" type="text" id="route" name="route" placeholder="Откуда — Куда">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="comment">Комментарий</label>
+              <textarea class="form-control form-control--textarea" id="comment" name="comment" placeholder="Дополнительная информация..."></textarea>
+            </div>
+            <label class="form-file">
+              Прикрепить файл (чертёж, фото)
+              <input type="file" name="attachment" accept=".pdf,.jpg,.jpeg,.png,.dwg">
+            </label>
+            <label class="form-consent">
+              <input type="checkbox" name="consent" required>
+              <span>Я даю согласие на обработку персональных данных в соответствии с <a href="politika-pdn.html">Политикой</a></span>
+            </label>
+            <button type="submit" class="btn-vdts btn-vdts--primary btn-vdts--lg">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container-vdts">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <svg class="logo__svg logo__svg--footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 52" width="88" height="31" aria-hidden="true">
+            <text x="0" y="38" font-family="Manrope, system-ui, sans-serif" font-size="40" font-weight="800" letter-spacing="-1.6" fill="#FFFFFF">ВДТ</text>
+            <rect x="0" y="46" width="44" height="2.5" fill="#A8C4DC" rx="1"/>
+          </svg>
+          <p>Волга-Дон-Транссервис<br>Негабаритные перевозки</p>
+        </div>
+        <div class="footer__col">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="uslugi.html">Услуги</a></li>
+            <li><a href="o-kompanii.html">О компании</a></li>
+            <li><a href="kak-rabotaem.html">Как работаем</a></li>
+            <li><a href="opyt.html">Наш опыт</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="kontakty.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Документы</h4>
+          <ul>
+            <li><a href="politika-pdn.html">Политика ПДн</a></li>
+            <li><a href="politika-cookies.html">Политика cookie</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Реквизиты</h4>
+          <p>ООО «Волга-Дон-Транссервис»<br>ИНН: «ЗАПОЛНИТЬ»<br>ОГРН: «ЗАПОЛНИТЬ»</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Волга-Дон-Транссервис. Все права защищены.</span>
+        <span class="lang-switch"><span class="lang-switch__active">RU</span> | EN</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-labelledby="cookieTitle" hidden>
+    <div class="container-vdts cookie-banner__inner">
+      <p class="cookie-banner__text" id="cookieTitle">Мы используем cookie для работы сайта (язык, тема оформления). Подробнее — в <a href="politika-cookies.html">Политике cookie</a>.</p>
+      <div class="cookie-banner__actions">
+        <button type="button" class="btn-vdts btn-vdts--primary" id="cookieAccept">Принять</button>
+        <a href="politika-cookies.html" class="btn-vdts btn-vdts--ghost">Подробнее</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/site.js"></script>
+</body>
+</html>
